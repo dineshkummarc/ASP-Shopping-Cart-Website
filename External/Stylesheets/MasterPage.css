@@ -1,0 +1,564 @@
+﻿body 
+{
+    margin:auto;
+    width: 1000px;
+}
+
+/* ----- Navigation Menu ----- */
+
+#NavigationMenu
+{
+    padding-top: 51px;
+    padding-left: 10px;
+    width:140px;
+    height:200px;
+    float:left;
+}
+
+.NavigationMenuLink
+{
+    font-family: Lucida Sans Unicode;
+    font-size: 16px;
+    color: #777777;
+    text-decoration: none;
+    outline: none;    
+}
+
+.NavigationMenuLinkActive
+{
+    font-family: Lucida Sans Unicode;
+    font-size: 16px;
+    color: #00B1FF;
+    text-decoration: none;
+    outline: none;    
+}
+
+/* ----- Header ----- */
+
+#Header
+{
+    width:850px;
+    height:100px;
+    float:left;
+}
+
+#LoggedWrapper
+{
+    width: 850px;
+    height: 22px;
+}
+#LoggedUserContainer
+{
+    padding-top: 3px;
+    float: right;
+    background-color: #4C4C4C;
+    width: 200px;
+    height: 19px;
+    text-align: center;
+}
+
+.ButtonContainer
+{
+    padding-top: 3px;
+    float: right;
+    background-color: #333333;
+    width: 60px;
+    height: 19px;
+    text-align: center;
+}
+
+.ButtonContainerLarge
+{
+    padding-top: 3px;
+    float: right;
+    background-color: #333333;
+    width: 90px;
+    height: 19px;
+    text-align: center;
+}
+
+.ButtonFont
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    display: block;
+    color: White;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+}
+
+#LogoBarSpacer
+{
+    width: 850px;
+    height: 17px;
+}
+
+
+#TitleWrapper
+{
+    display: block; 
+    float: left;
+    margin-bottom: 2px;
+}
+
+.ItemWrapperLeft
+{
+    display: block; 
+    float: left;
+    margin-bottom: 2px;
+    margin-left: 70px;
+}
+
+.ItemWrapperRight
+{
+    display: block; 
+    float: right;
+}
+
+#LogoLargeText
+{
+    font-family: Georgia;
+    font-size: 36px;
+    color: #1C1C1C;
+}
+
+#LogoSmallText
+{
+    font-family: Georgia;
+    font-size: 12px;
+    color: #1C1C1C;
+}
+
+#txtSearch
+{
+    display: block;
+    float: left;
+    margin-top: 8px;
+    border-style: solid;
+    border-color: #777777;
+    border-width: 1px;
+    height: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    color: #777777;
+    width: 240px;
+}
+
+#imgShoppingBag
+{
+    margin-top: 10px;
+}
+
+#lnkShoppingCart
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #777777;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    margin-top: 16px;
+}
+
+#lnkCheckout
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #777777;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    margin-top: 16px;
+}
+
+#LogoBarUnderline
+{
+    clear: both;
+    width: 850px;
+    height: 2px;
+    background-color: #EFEFEF;
+}
+
+/* ----- Content Pane ----- */
+
+#ContentPane
+{
+    float:left;
+    width:850px;
+}
+
+/* ----- Global CSS ----- */
+
+.TextBox
+{
+    border-style: solid;
+    border-color: #777777;
+    border-width: 1px;
+    height: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    color: #777777;
+    width: 240px;
+}
+
+.CatalogTextBox
+{
+    float:right;
+    border-style: solid;
+    border-color: #777777;
+    border-width: 1px;
+    height: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    color: #777777;
+    width: 50px;
+}
+
+.MultilineTextBox
+{
+    border-style: solid;
+    border-color: #777777;
+    border-width: 1px;
+    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    color: #777777;
+    width: 240px;
+}
+
+.MiniFontGrey
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #777777;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: right;
+    padding-left: 10px;
+}
+
+#SignupErrorMessages
+{
+    padding-left: 355px;
+    padding-bottom: 30px;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+#LoginErrorMessages
+{
+    padding-left: 330px;
+    padding-bottom: 20px;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.ValidatorSummary
+{
+    font-family: Lucida Sans Unicode;
+    color: #00B1FF;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+}
+
+.InlineValidator
+{
+   font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #00B1FF;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+
+.CalendarLabel
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #777777;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 147px;
+}
+
+.CalendarDay
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #777777;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    margin-top: 16px;
+}
+
+.CalendarHeaderCSS
+{
+    font-weight: normal;
+    text-decoration: underline;
+    color: #777777;
+}
+
+TABLE A 
+{
+    text-decoration:none
+}
+
+.DropDownList
+{
+    width: 250px;
+    height: 25px;
+    border-style: solid;
+    border-color: #777777;
+    border-width: 1px;
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    color: #777777;
+    padding-top: 2px;
+    padding-left: 4px;
+    outline: none;
+}
+
+.CenterTable
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.GridViewHeader
+{
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    color: #1C1C1C;
+    font-weight: normal;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.GridViewTuple
+{
+    border-bottom: 1px solid #EFEFEF;
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    color: #777777;
+    font-weight: normal;
+}
+
+.GridViewTupleAlternating
+{
+    background-color: #F4FCFF;
+    border-bottom: 1px solid #EFEFEF;
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    color: #777777;
+    font-weight: normal;
+}
+
+.GridViewSelected
+{
+    background-color: #00B1FF;
+    border-bottom: 1px solid #EFEFEF;
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#PageTitleContainer
+{
+    width:inherit; 
+    text-align:center;
+}
+
+.PageTitle
+{
+    font-family: Georgia;
+    font-size: 24px;
+    color: #00B1FF;
+    
+}
+
+h1
+{
+    font-family: Georgia;
+    font-size: 24px;
+    color: #00B1FF;
+    font-weight:normal;
+}
+
+.ButtonRight
+{
+    text-align:right;
+}
+
+.ButtonInvisible
+{
+    visibility: hidden; 
+    display: none;
+}
+
+.SupplierFieldsWrapper
+{
+    width: 650px; 
+    margin: auto;
+}
+
+.SupplierFields
+{
+    float: left;
+}
+
+.BottomValidationSummary
+{
+    float: left; 
+    padding-left: 70px;
+}
+
+.MenuSpacer
+{
+    width: 115px;
+    height: 2px;
+    background-color: #EFEFEF;
+}
+
+.ProductContent
+{
+    float: left;
+}
+
+.ProductButtons
+{
+    width: 30px;
+    float: left;
+    border-left: 2px solid #EFEFEF;
+    height: 200px;
+}
+
+.ProductButtonsLow
+{
+    width: 30px;
+    float: left;
+    border-left: 2px solid #01BFFF;
+    height: 200px;
+}
+
+.ProductImage
+{
+    width: 170px;
+    height: 200px;
+}
+
+.ProductButtonSpacer
+{
+    width: 30px;
+    height: 5px;
+}
+
+.ProductButton
+{
+    outline:0;
+}
+
+.MiniFontBlue
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #00B1FF;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: right;
+    padding-left: 10px;
+}
+
+.MiniFontBlueLeft
+{
+    font-family: Lucida Sans Unicode;
+    width: inherit;
+    height: inherit;
+    color: #00B1FF;
+    font-size: 11px;
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+
+.StoreSpacer
+{
+    width: inherit;
+    height: 10px;
+}
+
+#Toast
+{
+    visibility: hidden;
+    text-align: center;
+    padding-top: 17px;
+    margin-left: 678px;
+    margin-top: 48px;
+    width: 170px;
+    height: 33px;
+    border: 1px solid #01BFFF;
+    background-color: White;
+    position: absolute;
+}
+
+#Tooltip
+{
+    padding-top: 4px;
+    visibility: hidden;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    background-color: #333333;
+    position: absolute;
+}
+
+.ErrorBox
+{
+    visibility: hidden;
+    width: 140px; 
+    height: 25px; 
+    background-color:#01BFFF;
+}
+

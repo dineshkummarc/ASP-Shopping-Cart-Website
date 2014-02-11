@@ -1,0 +1,235 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="External.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>the Great Supermarket</title>
+    
+    <link href="Stylesheets/MasterPage.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Scripts/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="/JQuery/MasterPage.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMasterPage" runat="server">
+        <div id="NavigationMenu">
+             <% // ? Users
+                if ((Request.RawUrl == "/default.aspx") || (Request.RawUrl == "/default.aspx?"))
+                { %>
+                    <a href="/default.aspx" class="NavigationMenuLinkActive" currentlyloaded="true">home</a><br />
+             <% }
+                else
+                { %>
+                    <a href="/default.aspx" class="NavigationMenuLink">home</a><br />
+             <% } 
+
+                // "User" Users
+                if (Context.User.IsInRole("User"))
+                { %>
+
+                 <% if (Request.RawUrl == "/user/store.aspx")
+                    { %>
+                        <a href="/user/store.aspx" class="NavigationMenuLinkActive" currentlyloaded="true">store</a><br />
+                 <% }
+                    else
+                    { %>
+                        <a href="/user/store.aspx" class="NavigationMenuLink">store</a><br />
+                 <% } 
+                
+                } 
+
+                // "Administrator" Users
+                if (Context.User.IsInRole("Administrator"))
+                { %>
+
+                    <div class="MenuSpacer"></div>
+
+                    <% if (Request.RawUrl == "/administrator/role.aspx")
+                       { %>
+                            <a href="/administrator/role.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">role</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/role.aspx" class="NavigationMenuLink">role</a><br />
+                    <% } %>
+
+                    <% if (Request.RawUrl == "/administrator/usertype.aspx")
+                       { %>
+                            <a href="/administrator/usertype.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">user type</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/usertype.aspx" class="NavigationMenuLink">user type</a><br />
+                    <% } %>
+
+                    <% if (Request.RawUrl == "/administrator/allocate.aspx")
+                       { %>
+                            <a href="/administrator/allocate.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">allocate</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/allocate.aspx" class="NavigationMenuLink">allocate</a><br />
+                    <% } %>
+
+                    <div class="MenuSpacer"></div>
+
+                    <% if (Request.RawUrl == "/administrator/orderlist.aspx")
+                       { %>
+                            <a href="/administrator/orderlist.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">order list</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/orderlist.aspx" class="NavigationMenuLink">order list</a><br />
+                    <% } %>
+
+                     <% if (Request.RawUrl == "/administrator/supplierorder.aspx")
+                       { %>
+                            <a href="/administrator/supplierorder.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">supplier order</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/supplierorder.aspx" class="NavigationMenuLink">supplier order</a><br />
+                    <% } %>
+
+                    <div class="MenuSpacer"></div>
+
+                    <% if (Request.RawUrl == "/administrator/supplier.aspx")
+                       { %>
+                            <a href="/administrator/supplier.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">supplier</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/supplier.aspx" class="NavigationMenuLink">supplier</a><br />
+                    <% } %>
+
+                    <% if (Request.RawUrl == "/administrator/category.aspx")
+                       { %>
+                            <a href="/administrator/category.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">category</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/category.aspx" class="NavigationMenuLink">category</a><br />
+                    <% } %>
+
+                    <% if (Request.RawUrl == "/administrator/product.aspx")
+                       { %>
+                            <a href="/administrator/product.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">product</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/product.aspx" class="NavigationMenuLink">product</a><br />
+                    <% } %>
+
+                    <% if (Request.RawUrl == "/administrator/pricetype.aspx")
+                       { %>
+                            <a href="/administrator/pricetype.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">price type</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/pricetype.aspx" class="NavigationMenuLink">price type</a><br />
+                    <% } %>
+
+                    <div class="MenuSpacer"></div>
+
+                    <% if (Request.RawUrl == "/administrator/stockhistory.aspx")
+                       { %>
+                            <a href="/administrator/stockhistory.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">stock history</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/stockhistory.aspx" class="NavigationMenuLink">stock history</a><br />
+                    <% } %>
+
+                    <% if (Request.RawUrl == "/administrator/topten.aspx")
+                       { %>
+                            <a href="/administrator/topten.aspx" class="NavigationMenuLinkActive"  currentlyloaded="true">top ten</a><br />
+                    <% }
+                       else
+                       { %>
+                            <a href="/administrator/topten.aspx" class="NavigationMenuLink">top ten</a><br />
+                    <% } %>
+             <% } %>
+        </div>
+        <div id="Header">
+
+            <div id="Toast">
+                <asp:Label ID="lblToastText" CssClass="MiniFontBlue" runat="server" Text="" ClientIDMode="Static"></asp:Label>
+            </div>
+
+            <div id="Tooltip">
+                <asp:Label ID="lblTooltipText" CssClass="ButtonFont" runat="server" Text="" ClientIDMode="Static"></asp:Label>
+            </div>
+
+
+            <div id="LoggedWrapper">
+                <% if (!Context.User.Identity.IsAuthenticated)
+                   { %>
+                        <div id="SignUpContainer" class="ButtonContainer" style="margin-left: 3px;">
+                            <a href="/signup.aspx" class="ButtonFont">Signup</a>
+                        </div>
+                <% } %>
+                <div id="LoggedButtonContainer" class="ButtonContainer">
+                     <% if (!Context.User.Identity.IsAuthenticated)
+                        { %>    
+                             <a href="/login.aspx" class="ButtonFont">Login</a>
+                     <% }
+                        else
+                        { %>
+                            <a href="/logout.aspx" class="ButtonFont">Logout</a>
+                     <% } %>
+                </div>
+                <% if (Context.User.Identity.IsAuthenticated)
+                   { %>
+                        <div id="LoggedUserContainer">
+                            <asp:Label ID="lblLoggedUser" runat="server" CssClass="ButtonFont" Text=""></asp:Label>
+                        </div>
+                <% } %>
+            </div>
+            <br />
+            <div id="LogoBar">
+                <div id="LogoBarSpacer"></div>
+                
+                <div id="TitleWrapper">
+                    <asp:Label ID="LogoSmallText" runat="server" Text="Label">the</asp:Label>
+                    <asp:Label ID="LogoLargeText" runat="server" Text="Label">Great Supermarket</asp:Label>
+                </div>
+                <% if(Context.User.IsInRole("User")) { %>
+
+                 <% if (Request.RawUrl == "/user/store.aspx")
+                    { %>  
+                        <div id="SearchWrapper" class="ItemWrapperLeft">
+                            <asp:TextBox ID="txtSearch" CssClass="TextBox" runat="server" Text="Search Store" ClientIDMode="Static"></asp:TextBox>
+                        </div>
+                <% } %>
+                    
+                       <div id="CartWrapper" class="ItemWrapperRight">
+                       
+                      <% if (Request.RawUrl != "/user/cart.aspx")
+                       { %>
+                            
+                                <a href="/user/cart.aspx" id="lnkShoppingCart">Go to Cart</a>
+                         
+                <%     }
+                       else
+                       { %>
+
+                               <a href="/user/checkout.aspx" id="lnkCheckout">Check Out</a>
+
+                  <%     } %>  </div>
+                 <%  } %>
+                <div id="LogoBarUnderline"></div>
+            </div>
+        </div>
+        <div id="ContentPane">
+            <asp:ContentPlaceHolder ID="MasterPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        
+    </form>
+</body>
+</html>
